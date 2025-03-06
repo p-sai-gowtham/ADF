@@ -9,10 +9,20 @@
 			"path": {
 				"type": "String",
 				"defaultValue": "@concat(‘/api/v1/’,dataset().DivisionCode,’/crm/Accounts?$select=ID,Code,Country,Name,AddressLine1,Postcode,City,VATNumber,SalesCurrency’)"
+			},
+			"realtivepath": {
+				"type": "String",
+				"defaultValue": "/"
 			}
 		},
 		"annotations": [],
 		"type": "RestResource",
+		"typeProperties": {
+			"relativeUrl": {
+				"value": "@dataset().realtivepath",
+				"type": "Expression"
+			}
+		},
 		"schema": []
 	}
 }
