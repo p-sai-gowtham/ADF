@@ -68,6 +68,10 @@
 				],
 				"userProperties": [],
 				"typeProperties": {
+					"items": {
+						"value": "@variables('filename')",
+						"type": "Expression"
+					},
 					"isSequential": true
 				}
 			}
