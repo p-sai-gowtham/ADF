@@ -19,7 +19,7 @@
 						"type": "DelimitedTextSource",
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
-							"fileListPath": "assi-container/Country.csv",
+							"fileListPath": "assi-container/listoffiles.txt",
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
