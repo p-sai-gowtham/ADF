@@ -92,7 +92,8 @@
 					"dataset": {
 						"referenceName": "DelimitedText1",
 						"type": "DatasetReference"
-					}
+					},
+					"firstRowOnly": false
 				}
 			}
 		],
