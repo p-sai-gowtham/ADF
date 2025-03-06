@@ -16,25 +16,17 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "GetMetadataDataset",
+						"referenceName": "SourceDataset",
 						"type": "DatasetReference",
 						"parameters": {
-							"SourceContainer": {
-								"value": "@pipeline().parameters.SourceContainer",
-								"type": "Expression"
-							},
-							"SourceDirectory": {
-								"value": "@pipeline().parameters.SourceDirectory",
-								"type": "Expression"
-							}
+							"SourceContainer": "+"
 						}
 					},
 					"fieldList": [
 						"childItems"
 					],
 					"storeSettings": {
-						"type": "AzureBlobFSReadSettings",
-						"recursive": true
+						"type": "AzureBlobFSReadSettings"
 					},
 					"formatSettings": {
 						"type": "DelimitedTextReadSettings"
