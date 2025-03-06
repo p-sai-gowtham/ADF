@@ -104,10 +104,8 @@
 								},
 								"sink": {
 									"type": "SqlServerSink",
-									"tableOption": {
-										"value": "@{item().name}",
-										"type": "Expression"
-									}
+									"writeBehavior": "insert",
+									"sqlWriterUseTableLock": false
 								},
 								"enableStaging": false,
 								"translator": {
