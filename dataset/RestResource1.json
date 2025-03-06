@@ -1,0 +1,15 @@
+{
+	"name": "RestResource1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "RestService1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"typeProperties": {
+			"relativeUrl": "@concat(‘/api/v1/’,dataset().DivisionCode,’/crm/Accounts?$select=ID,Code,Country,Name,AddressLine1,Postcode,City,VATNumber,SalesCurrency’)"
+		},
+		"schema": []
+	}
+}
