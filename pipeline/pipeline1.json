@@ -19,7 +19,7 @@
 						"type": "DelimitedTextSource",
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
-							"fileListPath": "assi-container/listoffiles.txt",
+							"recursive": true,
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
