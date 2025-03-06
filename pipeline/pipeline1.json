@@ -114,6 +114,19 @@
 						"type": "DelimitedTextReadSettings"
 					}
 				}
+			},
+			{
+				"name": "ForEach1",
+				"type": "ForEach",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@activity('Get Metadata').output.childItems\n",
+						"type": "Expression"
+					},
+					"isSequential": true
+				}
 			}
 		],
 		"annotations": []
