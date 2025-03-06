@@ -5,11 +5,14 @@
 			"referenceName": "RestService1",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"path": {
+				"type": "String",
+				"defaultValue": "@concat(‘/api/v1/’,dataset().DivisionCode,’/crm/Accounts?$select=ID,Code,Country,Name,AddressLine1,Postcode,City,VATNumber,SalesCurrency’)"
+			}
+		},
 		"annotations": [],
 		"type": "RestResource",
-		"typeProperties": {
-			"relativeUrl": "@concat(‘/api/v1/’,dataset().DivisionCode,’/crm/Accounts?$select=ID,Code,Country,Name,AddressLine1,Postcode,City,VATNumber,SalesCurrency’)"
-		},
 		"schema": []
 	}
 }
