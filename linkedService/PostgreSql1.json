@@ -5,13 +5,13 @@
 		"annotations": [],
 		"type": "PostgreSqlV2",
 		"typeProperties": {
-			"server": "192.168.0.190",
+			"server": "localhost",
 			"port": 5432,
 			"database": "miniproject",
 			"username": "postgres",
 			"sslMode": 2,
 			"authenticationType": "Basic",
-			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI2YTE2OGM5OS1hMWM0LTRiMWYtYjFkMi1iMGI5ODc4NjYwNWQiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI2NzllNzRhNi1kYjY4LTRlZjgtYTBlYS1kYjIyY2NhYzI3ODciLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
 		},
 		"connectVia": {
 			"referenceName": "integrationRuntime1",
