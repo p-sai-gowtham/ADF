@@ -80,7 +80,8 @@
 						"linkedServiceName": {
 							"referenceName": "linkedService1",
 							"type": "LinkedServiceReference"
-						}
+						},
+						"path": ""
 					}
 				},
 				"inputs": [
