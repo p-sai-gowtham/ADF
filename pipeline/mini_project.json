@@ -117,8 +117,35 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"enableStaging": false
-				}
+					"source": {
+						"type": "PostgreSqlV2Source"
+					},
+					"sink": {
+						"type": "SnowflakeV2Sink",
+						"importSettings": {
+							"type": "SnowflakeImportCopyCommand"
+						}
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "linkedService1",
+							"type": "LinkedServiceReference"
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "PostgreSqlTable3",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "SnowflakeTable3",
+						"type": "DatasetReference"
+					}
+				]
 			},
 			{
 				"name": "Copy data4",
