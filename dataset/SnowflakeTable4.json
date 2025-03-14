@@ -1,5 +1,5 @@
 {
-	"name": "SnowflakeTable3_copy1",
+	"name": "SnowflakeTable4",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "Snowflake1",
