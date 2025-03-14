@@ -5,8 +5,7 @@
 		"annotations": [],
 		"type": "AzureBlobStorage",
 		"typeProperties": {
-			"sasUri": "https://assiblob.blob.core.windows.net/assi-container",
-			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDAwRUZCMkZCLTNDMUItNDBFMy1BNzMzLTQ5NzAwQUIyMUVCRV8xZDlkNzhlNy05ZGM1LTRmNTctYmY1NC00YzhlZGJkM2Y4MzEiDQp9"
+			"sasUri": "https://assiblob.blob.core.windows.net/?sv=2022-11-02&ss=bfqt&srt=sco&sp=rwdlacupiytfx&se=2025-03-14T13:00:03Z&st=2025-03-14T05:00:03Z&spr=https,http&sig=glaJTZPXyjhTEgvWRDyCVtIvN%2BHgryb%2BbrlbNp1vilU%3D?sp=racwdli&st=2025-03-14T04:55:34Z&se=2025-03-19T12:55:34Z&sip=0.0.0.0&sv=2022-11-02&sr=c&sig=pJtASVwOLh47RDq2iuMWIHTO4CWxnpmdt8sdREo28Rk%3D"
 		},
 		"connectVia": {
 			"referenceName": "integrationRuntime2",
