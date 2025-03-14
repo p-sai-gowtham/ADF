@@ -10,7 +10,7 @@
 		"schema": [],
 		"typeProperties": {
 			"schema": "public",
-			"table": "products"
+			"table": "country_region"
 		}
 	}
 }
