@@ -1,5 +1,5 @@
 {
-	"name": "PostgreSqlTable2",
+	"name": "PostgreSqlTable3",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "PostgreSql1",
@@ -10,7 +10,7 @@
 		"schema": [],
 		"typeProperties": {
 			"schema": "public",
-			"table": "customers"
+			"table": "products"
 		}
 	}
 }
