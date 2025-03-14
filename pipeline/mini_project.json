@@ -81,7 +81,7 @@
 							"referenceName": "linkedService1",
 							"type": "LinkedServiceReference"
 						},
-						"path": ""
+						"path": "assi-container"
 					}
 				},
 				"inputs": [
@@ -131,7 +131,8 @@
 						"linkedServiceName": {
 							"referenceName": "linkedService1",
 							"type": "LinkedServiceReference"
-						}
+						},
+						"path": "assi-container"
 					}
 				},
 				"inputs": [
@@ -167,7 +168,14 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"enableStaging": false
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "linkedService1",
+							"type": "LinkedServiceReference"
+						},
+						"path": "assi-container"
+					}
 				}
 			}
 		],
