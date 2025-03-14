@@ -168,6 +168,15 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
+					"source": {
+						"type": "PostgreSqlV2Source"
+					},
+					"sink": {
+						"type": "SnowflakeV2Sink",
+						"importSettings": {
+							"type": "SnowflakeImportCopyCommand"
+						}
+					},
 					"enableStaging": true,
 					"stagingSettings": {
 						"linkedServiceName": {
@@ -176,7 +185,19 @@
 						},
 						"path": "assi-container"
 					}
-				}
+				},
+				"inputs": [
+					{
+						"referenceName": "PostgreSqlTable4",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "SnowflakeTable4",
+						"type": "DatasetReference"
+					}
+				]
 			}
 		],
 		"annotations": []
