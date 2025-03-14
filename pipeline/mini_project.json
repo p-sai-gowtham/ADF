@@ -69,11 +69,29 @@
 					"source": {
 						"type": "PostgreSqlV2Source"
 					},
-					"enableStaging": false
+					"sink": {
+						"type": "SnowflakeV2Sink",
+						"importSettings": {
+							"type": "SnowflakeImportCopyCommand"
+						}
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "linkedService1",
+							"type": "LinkedServiceReference"
+						}
+					}
 				},
 				"inputs": [
 					{
-						"referenceName": "PostgreSqlTable1",
+						"referenceName": "PostgreSqlTable2",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "SnowflakeTable2",
 						"type": "DatasetReference"
 					}
 				]

@@ -87,7 +87,7 @@
 		],
 		"typeProperties": {
 			"schema": "PUBLIC",
-			"table": "TRANSACTIONS"
+			"table": "PRODUCTS"
 		}
 	}
 }
